@@ -13,3 +13,5 @@ MineTime Key Features
 - Press and hold the bed icon, then release as you wake up in-game for a more accurate sync. 
 - Second counter in lower left corner. Just because :) 
 - Info overlay for quick reference of app features.
+
+![MineTime Screenshot](https://github.com/jasonburk/MineTime/blob/main/App%20Screenshots/1.1.1%20(iPhone%205)/photo%202.PNG)
