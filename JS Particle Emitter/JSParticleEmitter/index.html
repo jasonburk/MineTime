@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<link rel="stylesheet" href="css/main_display.css" type="text/css" />
+<link rel="stylesheet" href="css/slider.css" type="text/css" />
+<link rel="stylesheet" media="screen" type="text/css" href="css/colorpicker.css" />
+
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+<script language="JavaScript" src="js/slider.js" ></script>
+<script type="text/javascript" src="js/particleEmitter.js"></script>
+<script type="text/javascript" src="js/colorpicker.js"></script>
+
+
+<title>JS Particle Emitter</title>
+</head>
+
+<body>
+	<div id="body-wrapper">
+		<div id="controls">
+			<label>Blast Delay</label><br />
+			<div class="carpe_horizontal_slider_track">
+				<div class="carpe_slider_slit">&nbsp;</div>
+				<div class="carpe_slider" id="blast-delay" orientation="horizontal" to="1000" from="100" style="left:100px;" display="blast-delay" >&nbsp;</div>
+			</div>
+			<br /><br />
+			
+			<label>Max Particles Per Blast</label><br />
+			<div class="carpe_horizontal_slider_track">
+				<div class="carpe_slider_slit">&nbsp;</div>
+				<div class="carpe_slider" id="blast-particles" orientation="horizontal" to="20" from="2" style="left:50px;" display="blast-particles" >&nbsp;</div>
+			</div>
+			<br /><br />
+			
+			<label>Gravity</label><br />
+			<div class="carpe_horizontal_slider_track">
+				<div class="carpe_slider_slit">&nbsp;</div>
+				<div class="carpe_slider" id="emitter-gravity" orientation="horizontal" to="10" from="-10" style="left:100px;" display="emitter-gravity" >&nbsp;</div>
+			</div>	
+			<br /><br />
+			
+			<label>Size</label><br />
+			<div class="carpe_horizontal_slider_track">
+				<div class="carpe_slider_slit">&nbsp;</div>
+				<div class="carpe_slider" id="particle-size" orientation="horizontal" to="50" from="5" style="" display="particle-size" >&nbsp;</div>
+			</div>	
+			<br /><br />
+			
+			<label>Color</label><br />
+			<div id="color-selector"></div>
+		
+		</div>
+		
+		<canvas id="emitter-canvas" width="800" height="600"></canvas>  
+	</div>
+</body>
+</html>

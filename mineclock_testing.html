@@ -1,0 +1,112 @@
+<!--
+MineClock Version 1.0 
+iOS 4.2+ & Android 2.3+
+Valerie & Jason Burk
+11/18/11
+-->
+
+
+<html>
+<head>
+<script type="text/javascript">
+var count=0;
+var t;
+var running=false;
+var daylength=1200;
+
+var sunrise=0;
+var day=91;
+var sunset=692;
+var night=783;
+
+var daytime;
+
+function timedCount()
+{
+document.getElementById('txt').innerHTML=count;
+	timeOfDay();
+	if(count==daylength){
+		count=0;
+	} else {
+		count++;
+	}
+t=setTimeout("timedCount()",1000);
+}
+
+function doTimer()
+{
+if (!running)
+  {
+  running=true;
+  timedCount();
+  }
+}
+
+function timeOfDay()
+{
+	if (count>=sunrise && count<day){
+		daytime = "sunrise";
+	} else if (count>=day && count<sunset){
+		daytime = "day";
+	} else if (count>=sunset && count<night){
+		daytime = "sunset";
+	} else if (count>=night){
+		daytime = "night. Watch out for creepers! Ahh! Sssssssssssss!";
+	}
+	document.getElementById('day').innerHTML=daytime;
+
+//if timed count is 0 - 90 then sunRise
+//if timed count is 91 - 691 then day
+//if timed count is 692 - 782 then sunSet
+//if timed count is 783 - 1200 then night
+}
+
+function resetTimer(){
+	count = day;
+}
+
+function setTimer(){
+	var timeset = document.getElementById('timepicker').value;
+	if (timeset == "sunrise"){
+		count = sunrise;
+	} else if (timeset == "day"){
+		count = day;
+	} else if (timeset == "sunset"){
+		count = sunset;
+	} else if (timeset == "night"){
+		count = night;
+	}
+
+}
+</script>
+</head>
+
+<body onload="doTimer()">
+<form>
+<div style="margin:4px;">Seconds: <div id="txt" style="display:inline;"></div></div> <!-- display second counting loop -->
+<div style="margin:4px;">Time of day: <div id="day" style="display:inline;"></div></div> <!-- display time of day based on timeOfDay function -->
+
+<input type="button" value="Wake Up!" onclick="resetTimer()" />
+<br />
+<select id="timepicker">
+	<option value="sunrise">Sunrise</option>
+	<option value="day">Day</option>
+	<option value="sunset">Sunset</option>
+	<option value="night">Night</option>
+</select>
+<input type="button" value="Set" onclick="setTimer()" />
+</form>
+</body>
+</html>
+
+
+
+
+<!-- 
+NEED TO ADD
+- Ability to choose time of day to start.
+
+WANT TO ADD
+- Ability to sync with server time. 
+-->
+

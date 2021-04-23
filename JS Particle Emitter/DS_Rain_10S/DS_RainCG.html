@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>DS Rain code generator</title>
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+var v="";
+bn=navigator.appName;
+bv=parseInt(navigator.appVersion);
+if(bn=="Netscape"){
+   if(bv==4)
+	  v="n4";
+}
+if(v=="n4"){
+	alert('HTML Code Generator does not work in Netscape 4,\nplease use Internet Explorer or a new version of Netscape.');
+}
+var p_speed;
+var p_numstars;
+var p_rainsize;
+var p_regkey;
+function ts(form){
+if(v!="n4"){
+gh(form);
+p_speed=form.speed.value;
+p_numraindrops=form.numraindrops.value;
+p_rainsize=form.rainsize.value;
+p_wind=form.wind.value;
+p_regkey=form.regkey.value;
+open("p_rain","TestScript","resizable=yes,status=yes");
+}
+}
+function dh(form){
+form.hta.value="";
+}
+function gh(form){
+if(v!="n4"){
+form.hta.value="";
+var t="<script language=\"JavaScript\">\r\n";
+	t+="var author=\"www.dseffects.com\";\r\n";
+	t+="var numraindrops=\""+form.numraindrops.value+"\";\r\n";
+	t+="var speed=\""+form.speed.value+"\";\r\n";
+	t+="var rainsize=\""+form.rainsize.value+"\";\r\n";
+	t+="var wind=\""+form.wind.value+"\";\r\n";
+	t+="var regkey=\""+form.regkey.value+"\";\r\n";
+	t+="</script>\r\n";
+	t+="<script src=\"DS_Rain.js\"></script>";
+form.hta.value=t;
+}
+}
+// End -->
+</SCRIPT>
+<STYLE TYPE="text/css">
+{FONT-FAMILY: helvetica; FONT-SIZE: 13px; FONT-WEIGHT: bold;}
+</STYLE>
+</head>
+<BODY BACKGROUND="../../images/bg1.gif" BGCOLOR="#295079" TEXT="#ffffff" VLINK="#ff8000" ALINK="#00ff00" LINK="#ffff00">
+<CENTER>
+<FONT COLOR="ffbf00" SIZE="+3"><B>DS Rain</B></FONT><BR>
+<FONT COLOR="00ff00" SIZE="+2">Code Generator</FONT>
+<P><BR>
+<FORM ACTION="">
+<TABLE>
+<tr>
+    <td><FONT COLOR="ffff00">Numbers of raindrops</FONT></td>
+    <td>
+	    <select name="numraindrops">
+	   	    	<option value="10">10
+	   	    	<option value="20">20
+	   	    	<option value="30">30
+	   	    	<option value="40" selected>40
+	   	    	<option value="50">50
+			    <option value="60">60
+				<option value="70">70
+	   	    	<option value="80">80
+	    </select>
+    </td>
+</tr>
+<tr>
+    <td><FONT COLOR="ffff00">Speed</FONT></td>
+    <td>
+    <select name="speed">
+	    	<option value="1">1
+	    	<option value="2" selected>2
+	    	<option value="3">3
+	    	<option value="4">4
+    </select>
+    </td>
+</tr>
+<tr>
+    <td><FONT COLOR="ffff00">Rain size</FONT></td>
+    <td>
+    <select name="rainsize">
+	    	<option value="1">1
+	    	<option value="2" selected>2
+	    	<option value="3">3
+    </select>
+    </td>
+</tr>
+<tr>
+    <td><FONT COLOR="ffff00">Wind</FONT></td>
+    <td>
+    <select name="wind">
+	    	<option value="left" selected>Left
+	    	<option value="no">No
+	    	<option value="right">Right
+	 </select>
+    </td>
+</tr>
+<tr>
+   <TD><FONT COLOR="ff0000"><b>Registration Key</b></FONT></TD>
+   <TD><input type="text" size="30" name="regkey" value="" TITLE="Insert code to remove the credits"></TD>
+</TR>
+</TABLE>
+<P>
+
+<input type="Button" value="Test Script" onClick="ts(this.form);">
+<input type="Reset" value="Reset" onClick="dh(this.form);">
+<input type="Button" value="Generate HTML code" onClick="gh(this.form);">
+<input type="button" onClick="this.form.hta.focus();this.form.hta.select()" value="Select All" ><br>
+<BR>
+<textarea name="hta" Rows=9 Cols=50 TITLE="ctrl+c to copy, ctrl+v to paste"></textarea>
+<P>
+<CENTER>
+Copy and paste this HTML code in your HTML page and then copy<BR>
+the <FONT COLOR="7fff7f">DS_Rain.js</FONT> file into the same directory of your HTML page.
+<P>
+<A HREF="DS_Rain.html">Back</A>
+</P>
+<HR ALIGN="center" SIZE="2" WIDTH="90%">
+<FONT SIZE="-1">Copyright © DS Effects - All Rights Reserved</FONT>
+</FORM>
+</center>
+</body>
+</html>

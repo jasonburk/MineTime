@@ -1,0 +1,18 @@
+<html>
+
+<title>
+DS Rain
+</title>
+</head>
+<body  bgcolor="295079">
+<script language="JavaScript">
+var author="www.dseffects.com";
+var numraindrops=opener.p_numraindrops;
+var speed=opener.p_speed;
+var rainsize=opener.p_rainsize;
+var wind=opener.p_wind;
+var regkey=opener.p_regkey;
+</script>
+<script src="DS_Rain.js"></script>
+</body>
+</html>

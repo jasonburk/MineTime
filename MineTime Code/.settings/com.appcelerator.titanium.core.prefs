@@ -1,0 +1,14 @@
+#Wed Nov 23 21:39:42 PST 2011
+eclipse.preferences.version=1
+provisioning_profiles/development/50126117-D72E-4501-A9B9-5C032136B9CE/appid=com.citruspowered.minetime
+provisioning_profiles/development/50126117-D72E-4501-A9B9-5C032136B9CE/filepath=/Users/jason/Dropbox/Projects/Minecraft Clock/certs/Valerie.mobileprovision
+provisioning_profiles/development/50126117-D72E-4501-A9B9-5C032136B9CE/name=Valerie
+provisioning_profiles/development/50126117-D72E-4501-A9B9-5C032136B9CE/uuid=50126117-D72E-4501-A9B9-5C032136B9CE
+provisioning_profiles/development/A4019B03-380A-48B8-B66D-0E37241D9034/appid=com.citruspowered.minetime
+provisioning_profiles/development/A4019B03-380A-48B8-B66D-0E37241D9034/filepath=/Users/jason/Dropbox/Projects/Minecraft Clock/certs/jason.mobileprovision
+provisioning_profiles/development/A4019B03-380A-48B8-B66D-0E37241D9034/name=jason
+provisioning_profiles/development/A4019B03-380A-48B8-B66D-0E37241D9034/uuid=A4019B03-380A-48B8-B66D-0E37241D9034
+provisioning_profiles/distribution/07940A88-91EF-42CA-8CBF-1B4DB3B13446/appid=com.citruspowered.minetime
+provisioning_profiles/distribution/07940A88-91EF-42CA-8CBF-1B4DB3B13446/filepath=/Users/jason/Dropbox/Projects/Minecraft Clock/certs/MineTimeAppStore.mobileprovision
+provisioning_profiles/distribution/07940A88-91EF-42CA-8CBF-1B4DB3B13446/name=MineTimeAppStore
+provisioning_profiles/distribution/07940A88-91EF-42CA-8CBF-1B4DB3B13446/uuid=07940A88-91EF-42CA-8CBF-1B4DB3B13446
